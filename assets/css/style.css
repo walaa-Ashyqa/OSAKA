@@ -1,0 +1,144 @@
+:root{
+    --mainColor: #ff206e;
+}
+.header{
+background-image: url('../img/bg_osaka.jpg');
+background-size: cover;
+background-position: center;
+}
+.header .header-content a{
+    color: var(--mainColor);
+
+
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid #222 ;
+    transition:background-color 1s;
+}
+.icon:hover{
+   background-color: var(--mainColor);
+   
+ 
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--mainColor);
+}
+.nav-link:focus  , .nav-link:hover{
+    color: var(--mainColor);
+}
+.about{
+    background-image: url("../img/light_dot.jpg");
+}
+.title h2{
+  font-size: 4rem;  
+  letter-spacing: 10px;
+color: #cacaca;
+font-weight: 900; 
+}
+.title h3{
+    font-size: 2rem;  
+   font-weight: 900; 
+    
+  }
+  .about .about-content p:first-of-type{
+    color: var(--mainColor);
+  }
+  
+  .services{
+    background-image: url("../img/dark_dot.jpg");
+    
+}
+.translate-middle{
+    transform: translate(-50%,-50%);
+      }
+.services .title h2 {
+    color:#222;
+}
+
+.services .title h3 {
+    position: relative;
+}
+  
+
+  .services .service-item h3:after{
+  
+content: '';
+   position: absolute;
+   top: 90px;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 10%;
+   height: 3px;
+   background-color: var(--mainColor);
+   transition: width 1s;
+    }
+
+    .services .service-item:hover h3:after{
+        width: 30%;
+        
+    }
+    .services .service-item .icon{
+        background-color: #222;
+        transition:background-color 1s;
+    }
+    .services .service-item:hover .icon{
+        background-color: var(--mainColor);
+       border: none;
+     }
+
+     .clients{
+        background-color: #f9f9f9;
+     }
+     .client img{
+    width: 200px;
+
+     }
+
+     .carousel-indicators [data-bs-target] {
+        width:  40px;
+        height: 40px;
+      
+        background-color: #d5d5d5;
+        border-radius: 50% ;
+        text-indent: 0%;
+        padding: 1px;
+    }
+    .carousel-control-prev-icon{
+        background-color: #00000028;
+        transition: background-color 1s;
+       border-radius: 50%;
+    }
+    .carousel-control-prev-icon:hover{
+        background-color: #000000c1;
+       
+    }
+
+    .carousel-control-next-icon{
+        background-color: #00000028;
+        transition: background-color 1s;
+       border-radius: 50%;
+    }
+    .carousel-control-next-icon:hover{
+        background-color: #000000c1;
+       
+    }
+
+    .carousel-indicators img{
+        width:  100%;
+        height: 100%;
+        
+    }
+
+    .nav-tabs{
+        justify-content: center;
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+        color: var(--mainColor);
+        border: none;
+    }
+    .nav-tabs .nav-link{
+        color: #000;
+        border: none;
+    }
